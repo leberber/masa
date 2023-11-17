@@ -19,7 +19,7 @@ app = Dash(
 )
 
 
-server = app.server
+# server = app.server
 
 
 

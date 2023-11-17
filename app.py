@@ -37,7 +37,7 @@ sideBarMenu = html.Div(
             children = [
                   dmc.NavLink(
                       id = 'action-icon',
-            label="With icon",
+            label="Home",
             icon=icon(icon="bi:house-door-fill"),
         ),
             ]
@@ -64,13 +64,7 @@ dmc.Text(id="action-output"),
     ]
 )
 
-@callback(
-    Output("action-output", "children"),
-    Input("action-icon", "n_clicks"),
-)
-def update_clicks(n_clicks):
-    print(n_clicks)
-    return f"Clicked {n_clicks} times."
+
 
 clientside_callback(
     ClientsideFunction(
